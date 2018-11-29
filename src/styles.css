@@ -3,7 +3,7 @@ body {
   text-align: center;
 }
 
-form {
+form.z {
   width: 100%;
   display: -webkit-flex;
   display: flex;
@@ -23,4 +23,31 @@ input[type="password"] {
 form.sports {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+}
+
+ul.record-list {
+  list-style-type: none;
+}
+ul.record-list > li {
+  width: 100%;
+}
+ul.record-list > li > img {
+  float: left;
+}
+ul.record-list > li > h3 {
+  float: left;
+}
+ul.record-list > li > div {
+  display: block;
+  width: 100%;
+  float: left;
+}
+ul.record-list:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form.zr {
+  display: none;
 }

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 
-class Favorite extends Component {
+class MFavorite extends Component {
   render() {
     return (
       <div>
-        <h2>Oblíbené sporty</h2>
+        <h2>Provozované sporty</h2>
         <input type="text" placeholder="Vyhledávání..." />
 
         <h4>TOP 5</h4>
@@ -68,10 +68,10 @@ class Favorite extends Component {
 
         <div className="nav">
           <button>
-            <NavLink to="/info">&lt; Předchozí</NavLink>
+            <NavLink to="/m-info-place">&lt; Předchozí</NavLink>
           </button>
           <button>
-            <NavLink to="/records">Další &gt;</NavLink>
+            <NavLink to="/m-add-info">Další &gt;</NavLink>
           </button>
         </div>
       </div>
@@ -79,4 +79,4 @@ class Favorite extends Component {
   }
 }
 
-export default Favorite;
+export default MFavorite;
